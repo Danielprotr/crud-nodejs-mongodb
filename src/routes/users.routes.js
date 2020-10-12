@@ -8,7 +8,11 @@ const {
     logout
 } = require('../controllers/users.controller');
 
-router.get('/users/signup', renderSignUpForm);
+
+const { isAuthenticated } = require('../helpers/auth');
+
+
+router.get('/users/signup', isAuthenticated, renderSignUpForm);
 
 router.post('/users/signup', signup);
 
