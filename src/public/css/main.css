@@ -1,5 +1,14 @@
 body{
-    background: #cc1479 ;
+    background: #1f1f1f ;
+}
+
+.card_color{
+    background: #ffffff70 ;
+    color: black;
+}
+
+.card_edge{
+    border-radius: 20px;
 }
 
 .logo{
